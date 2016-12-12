@@ -3,3 +3,13 @@
 ################################################################################
 
 /CareerNW/packages
+/CareerNW/CareerNW.Database/bin/Debug
+/CareerNW/CareerNW.Database/obj/Debug
+/CareerNW/CareerNW.RepoEF/bin
+/CareerNW/CareerNW.RepoEF/obj/Debug
+/CareerNW/CareerNW.RepoEF.UnitTests/obj/Debug
+/CareerNW/CareerNW.RepoEF.UnitTests/bin/Debug
+/CareerNW/CareerNW.ServiceWebAPI/obj/Debug
+/CareerNW/CareerNW.ServiceWebAPI/bin
+/CareerNW/CareerNW.ServiceWebAPI.Tests/obj/Debug
+/CareerNW/CareerNW.ServiceWebAPI.Tests/bin/Debug
