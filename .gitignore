@@ -13,3 +13,6 @@
 /CareerNW/CareerNW.ServiceWebAPI/bin
 /CareerNW/CareerNW.ServiceWebAPI.Tests/obj/Debug
 /CareerNW/CareerNW.ServiceWebAPI.Tests/bin/Debug
+/CareerNW/CareerNW.UI_SPA/obj/Debug
+/CareerNW/CareerNW.UI_SPA/bin
+/CareerNW/CareerNW.UI_SPA.UnitTests/obj/Debug
