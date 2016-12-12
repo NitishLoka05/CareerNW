@@ -138,6 +138,7 @@
     <Content Include="App_Angular\careernwapp.Services.js" />
     <Content Include="App_Angular\careernwapp.js" />
     <Content Include="App_Angular\Controllers\summaryCtrl.js" />
+    <Content Include="App_Angular\Directives\summaryDrct.js" />
     <Content Include="App_Angular\Services\mainService.js" />
     <Content Include="App_Angular\Views\summary.html" />
     <Content Include="Content\bootstrap.css" />
@@ -954,7 +955,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Angular\Directives\" />
     <Folder Include="App_Angular\Views\Partials\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
