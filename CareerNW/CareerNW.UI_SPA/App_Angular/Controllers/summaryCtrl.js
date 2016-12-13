@@ -7,32 +7,12 @@
 
         var vm = this;
 
-        vm.test = 'you bro';
-        //if (vm.submissionNumber) {
+        mainService.getVendorSummary().$promise.then(function (response) {
 
-        //    vm.hasSubmissionNumber = true;
+            vm.vendors = response;
 
-        //    quotebindMainService.getQuoteBindSubmissions(vm.submissionNumber).$promise.then(function (response) {
+        });
 
-        //        vm.items = response;
-
-        //        if (currentUser.getProfile().username === '') {
-        //            currentUser.loadProfile().$promise.then(function (result) {
-        //                currentUser.setProfile(result.UserID, result.UserName, result.HasReadOnlyAccess, result.HasReadWriteAccess, result.HasAdministratorAccess, result.Token);
-
-        //                vm.readonly = (!currentUser.getProfile().hasAdminAccess &&
-        //                    !currentUser.getProfile().hasWriteAccess &&
-        //                    currentUser.getProfile().hasReadAccess);
-        //            });
-        //        }
-        //        else {
-        //            vm.readonly = (!currentUser.getProfile().hasAdminAccess &&
-        //                !currentUser.getProfile().hasWriteAccess &&
-        //                currentUser.getProfile().hasReadAccess);
-        //        }
-
-        //    });
-        //}
 
 
     };
