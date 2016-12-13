@@ -66,5 +66,27 @@ namespace CareerNW.RepoEF.Components
 
             }
         }
+
+        public bool CreateVendor(Vendor vendor)
+        {
+            try
+            {
+                using (var dbcontext = new CareerNWDbContext())
+                {
+                    dbcontext.Vendors.Add(vendor);
+                    dbcontext.SaveChanges();
+
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            finally
+            {
+
+            }
+        }
     }
 }

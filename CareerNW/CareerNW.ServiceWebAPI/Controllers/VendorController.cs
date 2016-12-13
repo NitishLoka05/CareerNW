@@ -1,6 +1,6 @@
-﻿using CareerNW.RepoEF;
-using CareerNW.RepoEF.Components;
+﻿using CareerNW.RepoEF.Components;
 using CareerNW.ServiceWebAPI.Models;
+using CareerNW.ServiceWebAPI.Models.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +26,7 @@ namespace CareerNW.ServiceWebAPI.Controllers
 
         [HttpGet]
         // GET: api/Vendor
-        public IList<Models.DTOs.Vendor> Get()
+        public IList<Vendor> Get()
         {
             return _vendorModel.GetVendors();
         }
@@ -38,8 +38,10 @@ namespace CareerNW.ServiceWebAPI.Controllers
         }
 
         // POST: api/Vendor
-        public void Post([FromBody]string value)
+        public IHttpActionResult Post([FromBody]Vendor vendor)
         {
+            _vendorModel.CreateVendor(vendor);
+            return Ok();
         }
 
         // PUT: api/Vendor/5

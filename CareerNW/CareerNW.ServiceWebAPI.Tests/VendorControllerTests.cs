@@ -58,8 +58,7 @@ namespace CareerNW.ServiceWebAPI.UnitTests
             var controller = new VendorController(componentMock.Object);
 
             controller.Delete(1);
-
-            Assert.IsTrue(status);
+            
         }
     }
 }
