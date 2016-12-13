@@ -134,14 +134,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Angular\careernwapp.Routes.js" />
-    <Content Include="App_Angular\careernwapp.Services.js" />
-    <Content Include="App_Angular\careernwapp.js" />
+    <Content Include="App_Angular\careernw-routes.js" />
+    <Content Include="App_Angular\careernw-services.js" />
+    <Content Include="App_Angular\careernw.js" />
+    <Content Include="App_Angular\Controllers\mainScreenCtrl.js" />
     <Content Include="App_Angular\Controllers\detailsCtrl.js" />
     <Content Include="App_Angular\Controllers\summaryCtrl.js" />
     <Content Include="App_Angular\Directives\vendorDetailsDrct.js" />
+    <Content Include="App_Angular\Directives\mainScreenDrct.js" />
     <Content Include="App_Angular\Directives\vendorSummaryDrct.js" />
     <Content Include="App_Angular\Services\mainService.js" />
+    <Content Include="App_Angular\Views\mainScreen.html" />
     <Content Include="App_Angular\Views\details.html" />
     <Content Include="App_Angular\Views\summary.html" />
     <Content Include="Content\bootstrap.css" />

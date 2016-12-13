@@ -14,6 +14,6 @@
 
     vendorDetails.$inject = injectParams;
 
-    angular.module('careernwapp').directive('vendorDetails', vendorDetails);
+    angular.module('careernw').directive('vendorDetails', vendorDetails);
 
 }());

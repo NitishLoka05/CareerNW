@@ -5,11 +5,13 @@
 
     var mainService = function ($resource) {
 
-        var qbResource = $resource("http://localhost:64319/api/Vendor/");
+        var qbResource = $resource('http://localhost:60192/api/Vendor/');
+        var qbResourceWithParam = $resource('http://localhost:60192/api/Vendor/:vendorId', {vendorId: '@id'});
 
         var data = {
             'getVendorSummary': getVendorSummary,
             'getVendorDetails': getVendorDetails,
+            'deleteVendor': deleteVendor
         };
 
         function getVendorSummary() {
@@ -25,11 +27,19 @@
             return vendor;
         }
 
+        function deleteVendor(vendorId) {
+            var vendors = qbResourceWithParam.remove({ vendorId: vendorId },
+                function () {
+
+                });
+            return vendors;
+        }
+
         return data;
     }
 
     mainService.$inject = injectParams;
 
-    angular.module('careernwapp.Services').factory('mainService', mainService);
+    angular.module('careernw-services').factory('mainService', mainService);
 
 }());

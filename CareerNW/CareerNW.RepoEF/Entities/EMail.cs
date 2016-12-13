@@ -21,6 +21,7 @@ namespace CareerNW.RepoEF
         public string Address { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [Required]
         public virtual ICollection<Vendor> Vendors { get; set; }
     }
 }

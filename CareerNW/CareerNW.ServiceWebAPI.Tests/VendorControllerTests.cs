@@ -48,5 +48,18 @@ namespace CareerNW.ServiceWebAPI.UnitTests
             Assert.AreEqual(vendors.FirstOrDefault().Phones.FirstOrDefault().PhoneType, "Mobile");
 
         }
+        [TestMethod]
+        public void DeleteVendor_test()
+        {
+            var componentMock = new Mock<IVendorComponent>();
+            componentMock.Setup(service => service.DeleteVendor(It.IsAny<long>()))
+                        .Returns(true); ;
+
+            var controller = new VendorController(componentMock.Object);
+
+            controller.Delete(1);
+
+            Assert.IsTrue(status);
+        }
     }
 }

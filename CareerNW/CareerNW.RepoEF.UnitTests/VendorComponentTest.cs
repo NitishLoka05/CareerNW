@@ -26,5 +26,22 @@ namespace CareerNW.RepoEF.UnitTests
             Assert.AreEqual(vendors.FirstOrDefault().Phones.FirstOrDefault().PhoneType.Type, "Mobile");
 
         }
+
+        [TestMethod]
+        public void DeleteVendor_test()
+        {
+            var component = new VendorComponent();
+
+            var beforevendors = component.GetVendors();
+
+            var vendorId = beforevendors[1].ID;
+            var status = component.DeleteVendor(vendorId);
+            
+            var aftervendors = component.GetVendors();
+
+            Assert.IsTrue(status);
+            Assert.AreEqual(beforevendors.Count, (aftervendors.Count + 1));
+            
+        }
     }
 }

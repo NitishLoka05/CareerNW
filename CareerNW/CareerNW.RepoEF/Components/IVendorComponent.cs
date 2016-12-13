@@ -9,5 +9,7 @@ namespace CareerNW.RepoEF.Components
     public interface IVendorComponent
     {
         IList<Vendor> GetVendors();
+
+        bool DeleteVendor(long vendorId);
     }
 }

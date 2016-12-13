@@ -91,5 +91,10 @@ namespace CareerNW.ServiceWebAPI.Models
 
             return vendorsDto;
         }
+
+        internal void DeleteVendor(long id)
+        {
+            _vendorComponent.DeleteVendor(id);
+        }
     }
 }

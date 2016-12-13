@@ -17,6 +17,6 @@
 
     detailsCtrl.$inject = injectParams;
 
-    angular.module('careernwapp').controller('detailsCtrl', detailsCtrl);
+    angular.module('careernw').controller('detailsCtrl', detailsCtrl);
 
 }());

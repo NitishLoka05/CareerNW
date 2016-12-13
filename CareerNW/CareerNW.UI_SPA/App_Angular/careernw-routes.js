@@ -1,7 +1,7 @@
 ﻿'use strict';
 angular
-    .module('careernwapp.Routes', ['ngRoute'])
-    .config(function ($routeProvider) {
+    .module('careernw-routes', ['ngRoute'])
+    .config(function ($routeProvider, $locationProvider) {
 
         var viewBase = 'http://localhost:64319/App_Angular/Views/';
 
@@ -19,4 +19,6 @@ angular
                  //controllerAs: 'summaryVM'
              })
             .otherwise({ redirectTo: '/summary' })
+
+        //$locationProvider.html5Mode(true);
     });
