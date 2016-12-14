@@ -7,7 +7,7 @@
 
         var vm = this;
 
-        vm.title = 'Edit Vendor:';
+        vm.title = 'Edit Vendor';
 
         vm.vendor_original = {};
         vm.vendorId = $routeParams.vendorId

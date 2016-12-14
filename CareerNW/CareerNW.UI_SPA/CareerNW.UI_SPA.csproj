@@ -141,6 +141,7 @@
     <Content Include="App_Angular\Controllers\vendorCreateCtrl.js" />
     <Content Include="App_Angular\Controllers\vendorEditCtrl.js" />
     <Content Include="App_Angular\Controllers\vendorSummaryCtrl.js" />
+    <Content Include="App_Angular\Directives\vendorFormDrct.js" />
     <Content Include="App_Angular\Directives\vendorCreateDrct.js" />
     <Content Include="App_Angular\Directives\vendorEditDrct.js" />
     <Content Include="App_Angular\Directives\mainScreenDrct.js" />
@@ -150,6 +151,7 @@
     <Content Include="App_Angular\Views\create.html" />
     <Content Include="App_Angular\Views\mainScreen.html" />
     <Content Include="App_Angular\Views\edit.html" />
+    <Content Include="App_Angular\Views\Partials\vendorForm.html" />
     <Content Include="App_Angular\Views\summary.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -965,7 +967,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Angular\Views\Partials\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>

@@ -8,7 +8,7 @@
             restrict: 'E',
             templateUrl: 'http://localhost:64319' + '/App_Angular/Views/create.html',
             controller: 'vendorCreateCtrl',
-            controllerAs: 'createVM'
+            controllerAs: 'vm'
         };
     };
 

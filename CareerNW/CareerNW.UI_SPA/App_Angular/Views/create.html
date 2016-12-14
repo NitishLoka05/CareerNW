@@ -1,9 +1,14 @@
 ﻿
-<h4>{{createVM.title}}</h4>
+<h4 class="col-sm-offset-1">{{vm.title}}</h4>
+<br />
+<form novalidate class="css-form form-horizontal">
 
-<form novalidate class="css-form">
-    <label>Vendor Name: <input type="text" ng-model="createVM.vendor.Name" required /></label><br />
-    <label>Is prime vendor: <input type="checkbox" ng-model="createVM.vendor.IsPrime" /></label><br />
-    <input type="button" ng-click="createVM.reset()" value="Reset" />
-    <input type="submit" ng-click="createVM.create()" value="Create" />
+    <vendor-form></vendor-form>
+
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <input type="button" class="btn btn-danger" ng-click="vm.reset()" value="Reset" />
+            <input type="submit" class="btn btn-default" ng-click="vm.create()" value="Create" />
+        </div>
+    </div>
 </form>

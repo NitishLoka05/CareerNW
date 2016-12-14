@@ -43,6 +43,7 @@ namespace CareerNW.UI_SPA.App_Start
                         "~/App_Angular/Directives/vendorCreateDrct.js",
                         "~/App_Angular/Directives/vendorEditDrct.js",
                         "~/App_Angular/Directives/mainScreenDrct.js",
+                        "~/App_Angular/Directives/vendorFormDrct.js",
 
                         //Controllers
                         "~/App_Angular/Controllers/vendorSummaryCtrl.js",

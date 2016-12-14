@@ -1,9 +1,14 @@
 ﻿
-<h4>{{editVM.title}}</h4>
+<h4 class="col-sm-offset-1">{{vm.title}}</h4>
+<br />
+<form novalidate class="css-form form-horizontal">
 
-<form novalidate class="css-form">
-    <label>Vendor Name: <input type="text" ng-model="editVM.vendor.Name" required /></label><br />
-    <label>Is prime vendor: <input type="checkbox" ng-model="editVM.vendor.IsPrime" /></label><br />
-    <input type="button" ng-click="editVM.reset()" value="Reset" />
-    <input type="submit" ng-click="editVM.update()" value="Update" />
+    <vendor-form></vendor-form>
+
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <input type="button" class="btn btn-danger" ng-click="vm.reset()" value="Reset" />
+            <input type="submit" class="btn btn-default" ng-click="vm.update()" value="Update" />
+        </div>
+    </div>
 </form>
