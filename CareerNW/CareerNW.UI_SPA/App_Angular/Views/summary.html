@@ -26,10 +26,7 @@
             <td><div ng-if="vendor.EMails && vendor.EMails.length > 0">{{::vendor.EMails[0].Address}}</div></td>
             <td><div ng-if="vendor.Phones && vendor.Phones.length > 0">{{::vendor.Phones[0].Number}}</div></td>
             <td class="text-center">
-                <button class="btn btn-sm" ng-click="loadVendorDetails('/details', vendor.ID)">
-                    <span class="glyphicon glyphicon-folder-open"></span> Details
-                </button>
-                <button class="btn btn-sm" ng-click="summaryVM.editVendor('/edit', vendor.ID)">
+                <button class="btn btn-sm" ng-click="editVendor(vendor.ID)">
                     <span class="glyphicon glyphicon-edit"></span> Update
                 </button>
                 <button class="btn btn-sm" ng-click="summaryVM.deleteVendor(vendor.ID)">

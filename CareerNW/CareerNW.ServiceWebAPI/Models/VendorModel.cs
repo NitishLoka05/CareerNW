@@ -100,8 +100,65 @@ namespace CareerNW.ServiceWebAPI.Models
 
         internal void CreateVendor(VendorDto vendorDto)
         {
-            var vendor = new Vendor();
+            var vendor = mapToEntity(vendorDto);
             _vendorComponent.CreateVendor(vendor);
+        }
+
+        internal void UpdateVendor(VendorDto vendorDto)
+        {
+            var vendor = mapToEntity(vendorDto);
+            _vendorComponent.UpdateVendor(vendor);
+        }
+
+        private Vendor mapToEntity(VendorDto _vendorDto)
+        {
+            var vendor = new Vendor();
+            vendor.ID = _vendorDto.ID;
+            vendor.Name = _vendorDto.Name;
+            vendor.IsPrime = _vendorDto.IsPrime;
+
+            vendor.Addresses = (_vendorDto.Addresses != null && _vendorDto.Addresses.Count > 0) ? new List<Address>() : null;
+            foreach (var _addressDto in _vendorDto.Addresses)
+            {
+                vendor.Addresses.Add(new Address()
+                {
+                    ID = _addressDto.ID,
+                    StreetAddress = _addressDto.StreetAddress,
+                    StreetAddress2 = _addressDto.StreetAddress2,
+                    City = _addressDto.City,
+                    State = _addressDto.State,
+                    Country = _addressDto.Country,
+                    Zipcode = _addressDto.Zipcode
+                });
+            }
+
+            vendor.EMails = (_vendorDto.EMails != null && _vendorDto.EMails.Count > 0) ? new List<EMail>() : null;
+            foreach (var _emailDto in _vendorDto.EMails)
+            {
+                vendor.EMails.Add(new EMail()
+                {
+                    ID = _emailDto.ID,
+                    Address = _emailDto.Address
+                });
+            }
+
+            vendor.Phones = (_vendorDto.Phones != null && _vendorDto.Phones.Count > 0) ? new List<Phone>() : null;
+            foreach (var _phoneDto in _vendorDto.Phones)
+            {
+                vendor.Phones.Add(new Phone()
+                {
+                    ID = _phoneDto.ID,
+                    Number = _phoneDto.Number,
+                    CountryCode = _phoneDto.CountryCode,
+                    Extension = _phoneDto.Extension,
+                    PhoneType = new PhoneType()
+                    {
+                        Type = _phoneDto.PhoneType,
+                        Phones = vendor.Phones
+                    }
+                });
+            }
+            return vendor;
         }
 
         internal void DeleteVendor(long id)

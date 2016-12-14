@@ -3,7 +3,7 @@
 
     var injectParams = ['mainService'];
 
-    var detailsCtrl = function (mainService) {
+    var vendorEditCtrl = function (mainService) {
 
         var vm = this;
 
@@ -15,8 +15,8 @@
 
     };
 
-    detailsCtrl.$inject = injectParams;
+    vendorEditCtrl.$inject = injectParams;
 
-    angular.module('careernw').controller('detailsCtrl', detailsCtrl);
+    angular.module('careernw').controller('vendorEditCtrl', vendorEditCtrl);
 
 }());

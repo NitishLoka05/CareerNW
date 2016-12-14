@@ -12,8 +12,14 @@ angular
                  //templateUrl: viewBase + 'summary.html',
                  //controllerAs: 'summaryVM'
              })
-             .when('/details', {
-                 template: '<vendor-details></vendor-details>'
+             .when('/edit', {
+                 template: '<vendor-edit></vendor-edit>'
+                 //controller: 'detailsCtrl',
+                 //templateUrl: viewBase + 'summary.html',
+                 //controllerAs: 'summaryVM'
+             })
+             .when('/edit/5', {
+                 template: '<vendor-edit></vendor-edit>'
                  //controller: 'detailsCtrl',
                  //templateUrl: viewBase + 'summary.html',
                  //controllerAs: 'summaryVM'

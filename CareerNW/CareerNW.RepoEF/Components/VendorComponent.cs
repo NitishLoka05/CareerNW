@@ -88,5 +88,24 @@ namespace CareerNW.RepoEF.Components
 
             }
         }
+
+        public bool UpdateVendor(Vendor vendor)
+        {
+            try
+            {
+                DeleteVendor(vendor.ID);
+                vendor.ID = 0;
+                CreateVendor(vendor);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            finally
+            {
+
+            }
+        }
     }
 }

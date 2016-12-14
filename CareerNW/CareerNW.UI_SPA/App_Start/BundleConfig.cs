@@ -40,12 +40,12 @@ namespace CareerNW.UI_SPA.App_Start
 
                         //Directives
                         "~/App_Angular/Directives/vendorSummaryDrct.js",
-                        "~/App_Angular/Directives/vendorDetailsDrct.js",
+                        "~/App_Angular/Directives/vendorEditDrct.js",
                         "~/App_Angular/Directives/mainScreenDrct.js",
 
                         //Controllers
-                        "~/App_Angular/Controllers/summaryCtrl.js",
-                        "~/App_Angular/Controllers/detailsCtrl.js",
+                        "~/App_Angular/Controllers/vendorSummaryCtrl.js",
+                        "~/App_Angular/Controllers/vendorEditCtrl.js",
                         "~/App_Angular/Controllers/mainScreenCtrl.js",
 
                         //Services

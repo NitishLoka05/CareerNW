@@ -7,7 +7,7 @@
         return {
             restrict: 'E',
             templateUrl: 'http://localhost:64319' + '/App_Angular/Views/summary.html',
-            controller: 'summaryCtrl',
+            controller: 'vendorSummaryCtrl',
             controllerAs: 'summaryVM'
         };
     };

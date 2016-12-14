@@ -3,7 +3,7 @@
 
     var injectParams = ['mainService'];
 
-    var summaryCtrl = function (mainService) {
+    var vendorSummaryCtrl = function (mainService) {
 
         var vm = this;
 
@@ -38,8 +38,8 @@
         
     };
 
-    summaryCtrl.$inject = injectParams;
+    vendorSummaryCtrl.$inject = injectParams;
 
-    angular.module('careernw').controller('summaryCtrl', summaryCtrl);
+    angular.module('careernw').controller('vendorSummaryCtrl', vendorSummaryCtrl);
 
 }());

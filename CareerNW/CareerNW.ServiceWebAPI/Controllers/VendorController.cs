@@ -45,8 +45,10 @@ namespace CareerNW.ServiceWebAPI.Controllers
         }
 
         // PUT: api/Vendor/5
-        public void Put(int id, [FromBody]string value)
+        public IHttpActionResult Put(int id, [FromBody]Vendor vendor)
         {
+            _vendorModel.UpdateVendor(vendor);
+            return Ok();
         }
 
         // DELETE: api/Vendor/5

@@ -13,5 +13,7 @@ namespace CareerNW.RepoEF.Components
         bool DeleteVendor(long vendorId);
 
         bool CreateVendor(Vendor vendor);
+
+        bool UpdateVendor(Vendor vendor);
     }
 }

@@ -54,7 +54,7 @@ namespace CareerNW.RepoEF.UnitTests
 
             var newvendor = new Vendor()
             {
-                Name = "Test2",
+                Name = "Test1",
                 IsPrime = true,
                 Addresses = new List<Address>(),
                 Phones = new List<Phone>(),
@@ -80,6 +80,26 @@ namespace CareerNW.RepoEF.UnitTests
 
             Assert.IsTrue(status);
             Assert.AreEqual(aftervendors.Count, (beforevendors.Count + 1));
+
+        }
+
+        [TestMethod]
+        public void UpdateVendor_test()
+        {
+            var component = new VendorComponent();
+
+            var beforevendors = component.GetVendors();
+            
+            var updatedvendor = beforevendors.FirstOrDefault();
+            updatedvendor.Name = "yoyo";
+            updatedvendor.Phones.FirstOrDefault().Number = "1231231235";
+
+            var status = component.UpdateVendor(updatedvendor);
+
+            var aftervendors = component.GetVendors();
+
+            Assert.IsTrue(status);
+            Assert.AreEqual(aftervendors.Count, (beforevendors.Count));
 
         }
     }

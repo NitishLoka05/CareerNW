@@ -7,10 +7,9 @@
 
         var vm = this;
         
-        $scope.loadVendorDetails = function (path, vendorId) {
+        $scope.editVendor = function (vendorId) {
 
-            //$location.path(path + '/' + vendorId);
-            $location.path('/details');
+            $location.path('/edit/'+ vendorId);
 
         };
 
