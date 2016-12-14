@@ -135,6 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Angular\careernw-routes.js" />
+    <Content Include="App_Angular\careernw-constants.js" />
     <Content Include="App_Angular\careernw-services.js" />
     <Content Include="App_Angular\careernw.js" />
     <Content Include="App_Angular\Controllers\mainScreenCtrl.js" />

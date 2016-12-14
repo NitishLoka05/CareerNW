@@ -1,12 +1,12 @@
 ﻿(function () {
 
-    var injectParams = [];
+    var injectParams = ['careernwConstants'];
 
-    var vendorForm = function () {
+    var vendorForm = function (careernwConstants) {
 
         return {
             restrict: 'E',
-            templateUrl: 'http://localhost:64319' + '/App_Angular/Views/Partials/vendorForm.html'
+            templateUrl: careernwConstants.clientPath + '/App_Angular/Views/Partials/vendorForm.html'
         };
     };
 

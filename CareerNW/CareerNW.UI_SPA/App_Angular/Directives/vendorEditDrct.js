@@ -1,12 +1,12 @@
 ﻿(function () {
 
-    var injectParams = [];
+    var injectParams = ['careernwConstants'];
 
-    var vendorEdit = function () {
+    var vendorEdit = function (careernwConstants) {
 
         return {
             restrict: 'E',
-            templateUrl: 'http://localhost:64319' + '/App_Angular/Views/edit.html',
+            templateUrl: careernwConstants.clientPath + '/App_Angular/Views/edit.html',
             controller: 'vendorEditCtrl',
             controllerAs: 'vm'
         };

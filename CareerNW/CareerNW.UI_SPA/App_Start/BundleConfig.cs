@@ -34,9 +34,17 @@ namespace CareerNW.UI_SPA.App_Start
                         "~/Scripts/angular-route.js",
                         "~/Scripts/angular-resource.js",
 
+                        //CareerNW Module
                         "~/App_Angular/careernw.js",
+
+                        //Routes
                         "~/App_Angular/careernw-routes.js",
+
+                        //Services
                         "~/App_Angular/careernw-services.js",
+
+                        //Configuation
+                        "~/App_Angular/careernw-constants.js",
 
                         //Directives
                         "~/App_Angular/Directives/vendorSummaryDrct.js",

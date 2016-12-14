@@ -1,13 +1,13 @@
 ﻿(function () {
     "use strict";
 
-    var injectParams = ['$resource'];
+    var injectParams = ['$resource', 'careernwConstants'];
 
-    var mainService = function ($resource) {
+    var mainService = function ($resource, careernwConstants) {
 
-        var qbResource = $resource('http://localhost:60192/api/Vendor/');
-        var qbResource_params = $resource('http://localhost:60192/api/Vendor/:vendorId', { vendorId: '@id' });
-        var qbResource_params_update = $resource('http://localhost:60192/api/Vendor/:vendorId', { vendorId: '@id' }, { 'update': { method: 'PUT' } });
+        var qbResource = $resource(careernwConstants.serverPath + '/api/Vendor/');
+        var qbResource_params = $resource(careernwConstants.serverPath + '/api/Vendor/:vendorId', { vendorId: '@id' });
+        var qbResource_params_update = $resource(careernwConstants.serverPath + '/api/Vendor/:vendorId', { vendorId: '@id' }, { 'update': { method: 'PUT' } });
 
         var data = {
             'getVendorSummary': getVendorSummary,
