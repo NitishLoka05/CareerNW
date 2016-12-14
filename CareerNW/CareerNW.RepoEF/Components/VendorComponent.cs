@@ -37,6 +37,33 @@ namespace CareerNW.RepoEF.Components
             }
         }
 
+        public Vendor GetVendor(long vendorId)
+        {
+            try
+            {
+                using (var dbcontext = new CareerNWDbContext())
+                {
+                    var vendor = dbcontext.Vendors
+                        .Include(v => v.Addresses)
+                        .Include(v => v.EMails)
+                        .Include(v => v.Phones)
+                        .Include(v => v.Phones.Select(p => p.PhoneType))
+                        .AsParallel()
+                        .FirstOrDefault(v => v.ID == vendorId);
+
+                    return vendor;
+                }
+            }
+            catch (Exception ex)
+            {
+                return new Vendor();
+            }
+            finally
+            {
+
+            }
+        }
+
         public bool DeleteVendor(long vendorId)
         {
             try

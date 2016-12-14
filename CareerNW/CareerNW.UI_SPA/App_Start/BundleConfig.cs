@@ -40,19 +40,21 @@ namespace CareerNW.UI_SPA.App_Start
 
                         //Directives
                         "~/App_Angular/Directives/vendorSummaryDrct.js",
+                        "~/App_Angular/Directives/vendorCreateDrct.js",
                         "~/App_Angular/Directives/vendorEditDrct.js",
                         "~/App_Angular/Directives/mainScreenDrct.js",
 
                         //Controllers
                         "~/App_Angular/Controllers/vendorSummaryCtrl.js",
+                        "~/App_Angular/Controllers/vendorCreateCtrl.js",
                         "~/App_Angular/Controllers/vendorEditCtrl.js",
                         "~/App_Angular/Controllers/mainScreenCtrl.js",
 
                         //Services
-                        "~/App_Angular/Services/mainService.js"//,
+                        "~/App_Angular/Services/mainService.js",
 
                         //Filters
-                        //"~/App_Angular/filters/phoneFilter.js"
+                        "~/App_Angular/Filters/phoneFilter.js"
                         ));
 
             // Set EnableOptimizations to false for debugging. For more information,

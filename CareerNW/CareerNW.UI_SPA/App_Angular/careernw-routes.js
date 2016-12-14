@@ -12,18 +12,15 @@ angular
                  //templateUrl: viewBase + 'summary.html',
                  //controllerAs: 'summaryVM'
              })
-             .when('/edit', {
+             .when('/create', {
+                 template: '<vendor-create></vendor-create>'
+             })
+             .when('/edit/:vendorId', {
                  template: '<vendor-edit></vendor-edit>'
                  //controller: 'detailsCtrl',
                  //templateUrl: viewBase + 'summary.html',
                  //controllerAs: 'summaryVM'
-             })
-             .when('/edit/5', {
-                 template: '<vendor-edit></vendor-edit>'
-                 //controller: 'detailsCtrl',
-                 //templateUrl: viewBase + 'summary.html',
-                 //controllerAs: 'summaryVM'
-             })
+             })             
             .otherwise({ redirectTo: '/summary' })
 
         //$locationProvider.html5Mode(true);

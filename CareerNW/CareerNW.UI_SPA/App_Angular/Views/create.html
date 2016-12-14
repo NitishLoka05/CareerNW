@@ -1,0 +1,9 @@
+﻿
+<h4>{{createVM.title}}</h4>
+
+<form novalidate class="css-form">
+    <label>Vendor Name: <input type="text" ng-model="createVM.vendor.Name" required /></label><br />
+    <label>Is prime vendor: <input type="checkbox" ng-model="createVM.vendor.IsPrime" /></label><br />
+    <input type="button" ng-click="createVM.reset()" value="Reset" />
+    <input type="submit" ng-click="createVM.create()" value="Create" />
+</form>

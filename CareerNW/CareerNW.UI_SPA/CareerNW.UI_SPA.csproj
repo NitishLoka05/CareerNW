@@ -138,12 +138,16 @@
     <Content Include="App_Angular\careernw-services.js" />
     <Content Include="App_Angular\careernw.js" />
     <Content Include="App_Angular\Controllers\mainScreenCtrl.js" />
+    <Content Include="App_Angular\Controllers\vendorCreateCtrl.js" />
     <Content Include="App_Angular\Controllers\vendorEditCtrl.js" />
     <Content Include="App_Angular\Controllers\vendorSummaryCtrl.js" />
+    <Content Include="App_Angular\Directives\vendorCreateDrct.js" />
     <Content Include="App_Angular\Directives\vendorEditDrct.js" />
     <Content Include="App_Angular\Directives\mainScreenDrct.js" />
     <Content Include="App_Angular\Directives\vendorSummaryDrct.js" />
+    <Content Include="App_Angular\Filters\phoneFilter.js" />
     <Content Include="App_Angular\Services\mainService.js" />
+    <Content Include="App_Angular\Views\create.html" />
     <Content Include="App_Angular\Views\mainScreen.html" />
     <Content Include="App_Angular\Views\edit.html" />
     <Content Include="App_Angular\Views\summary.html" />

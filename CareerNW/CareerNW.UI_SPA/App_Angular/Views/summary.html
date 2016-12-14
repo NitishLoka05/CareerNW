@@ -1,7 +1,7 @@
 ﻿
 <h4>{{summaryVM.title}}</h4>
 <div class="pull-right">
-    <button class="btn btn-lg">
+    <button class="btn btn-lg" ng-click="createVendor()">
         <span class="glyphicon glyphicon-plus"></span> Create Vendor
     </button>
 </div>
@@ -24,7 +24,7 @@
             <td><input type="checkbox" ng-model="vendor.IsPrime" /></td>
             <td><div ng-show="vendor.Addresses">{{::vendor.Addresses.length}}</div><div ng-hide="vendor.Addresses">0</div></td>
             <td><div ng-if="vendor.EMails && vendor.EMails.length > 0">{{::vendor.EMails[0].Address}}</div></td>
-            <td><div ng-if="vendor.Phones && vendor.Phones.length > 0">{{::vendor.Phones[0].Number}}</div></td>
+            <td><div ng-if="vendor.Phones && vendor.Phones.length > 0">{{::vendor.Phones[0].Number | phoneFormat}}</div></td>
             <td class="text-center">
                 <button class="btn btn-sm" ng-click="editVendor(vendor.ID)">
                     <span class="glyphicon glyphicon-edit"></span> Update

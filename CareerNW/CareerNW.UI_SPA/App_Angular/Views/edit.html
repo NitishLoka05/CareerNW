@@ -1,1 +1,9 @@
-﻿<div>Details Page</div>
+﻿
+<h4>{{editVM.title}}</h4>
+
+<form novalidate class="css-form">
+    <label>Vendor Name: <input type="text" ng-model="editVM.vendor.Name" required /></label><br />
+    <label>Is prime vendor: <input type="checkbox" ng-model="editVM.vendor.IsPrime" /></label><br />
+    <input type="button" ng-click="editVM.reset()" value="Reset" />
+    <input type="submit" ng-click="editVM.update()" value="Update" />
+</form>

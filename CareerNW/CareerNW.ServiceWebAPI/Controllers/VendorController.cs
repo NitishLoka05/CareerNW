@@ -32,9 +32,9 @@ namespace CareerNW.ServiceWebAPI.Controllers
         }
 
         // GET: api/Vendor/5
-        public string Get(int id)
+        public Vendor Get(long id)
         {
-            return "value";
+            return _vendorModel.GetVendors(id);
         }
 
         // POST: api/Vendor
@@ -45,7 +45,7 @@ namespace CareerNW.ServiceWebAPI.Controllers
         }
 
         // PUT: api/Vendor/5
-        public IHttpActionResult Put(int id, [FromBody]Vendor vendor)
+        public IHttpActionResult Put(long id, [FromBody]Vendor vendor)
         {
             _vendorModel.UpdateVendor(vendor);
             return Ok();

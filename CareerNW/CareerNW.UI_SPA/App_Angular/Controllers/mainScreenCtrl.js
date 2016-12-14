@@ -6,6 +6,12 @@
     var mainScreenCtrl = function (mainService, $scope, $routeParams, $location) {
 
         var vm = this;
+
+        $scope.createVendor = function () {
+
+            $location.path('/create');
+
+        };
         
         $scope.editVendor = function (vendorId) {
 

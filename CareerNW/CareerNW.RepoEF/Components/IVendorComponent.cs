@@ -10,6 +10,8 @@ namespace CareerNW.RepoEF.Components
     {
         IList<Vendor> GetVendors();
 
+        Vendor GetVendor(long vendorId);
+
         bool DeleteVendor(long vendorId);
 
         bool CreateVendor(Vendor vendor);

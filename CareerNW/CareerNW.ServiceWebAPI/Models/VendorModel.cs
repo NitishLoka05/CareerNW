@@ -32,70 +32,85 @@ namespace CareerNW.ServiceWebAPI.Models
 
             foreach (var vendor in vendors)
             {
-                var vendorDto = new VendorDto()
-                {
-                    ID = vendor.ID,
-                    Name = vendor.Name,
-                    IsPrime = vendor.IsPrime
-                };
-
-                vendorDto.Addresses = new List<AddressDto>();
-                if (vendor.Addresses.Any())
-                {
-                    foreach (var address in vendor.Addresses)
-                    {
-                        var addressDto = new AddressDto()
-                        {
-                            ID = address.ID,
-                            StreetAddress = address.StreetAddress,
-                            StreetAddress2 = address.StreetAddress2,
-                            City = address.City,
-                            State = address.State,
-                            Country = address.Country,
-                            Zipcode = address.Zipcode
-                        };
-
-                        vendorDto.Addresses.Add(addressDto);
-                    }
-                }
-
-                vendorDto.EMails = new List<EmailDto>();
-                if (vendor.EMails.Any())
-                {
-                    foreach (var vendorEMail in vendor.EMails)
-                    {
-                        var emailDto = new EmailDto()
-                        {
-                            ID = vendorEMail.ID,
-                            Address = vendorEMail.Address,
-                        };
-
-                        vendorDto.EMails.Add(emailDto);
-                    }
-                }
-
-                vendorDto.Phones = new List<PhoneDto>();
-                if (vendor.Phones.Any())
-                {
-                    foreach (var vendorPhone in vendor.Phones)
-                    {
-                        var phoneDto = new PhoneDto()
-                        {
-                            ID = vendorPhone.ID,
-                            CountryCode = vendorPhone.CountryCode,
-                            Number = vendorPhone.Number,
-                            Extension = vendorPhone.Extension,
-                            PhoneType = vendorPhone.PhoneType.Type
-                        };
-
-                        vendorDto.Phones.Add(phoneDto);
-                    }
-                }
-
+                var vendorDto = mapToDto(vendor);
                 vendorsDto.Add(vendorDto);
             }
 
             return vendorsDto;
+        }
+
+        private VendorDto mapToDto(Vendor vendor)
+        {
+            var vendorDto = new VendorDto()
+            {
+                ID = vendor.ID,
+                Name = vendor.Name,
+                IsPrime = vendor.IsPrime
+            };
+
+            vendorDto.Addresses = new List<AddressDto>();
+            if (vendor.Addresses.Any())
+            {
+                foreach (var address in vendor.Addresses)
+                {
+                    var addressDto = new AddressDto()
+                    {
+                        ID = address.ID,
+                        StreetAddress = address.StreetAddress,
+                        StreetAddress2 = address.StreetAddress2,
+                        City = address.City,
+                        State = address.State,
+                        Country = address.Country,
+                        Zipcode = address.Zipcode
+                    };
+
+                    vendorDto.Addresses.Add(addressDto);
+                }
+            }
+
+            vendorDto.EMails = new List<EmailDto>();
+            if (vendor.EMails.Any())
+            {
+                foreach (var vendorEMail in vendor.EMails)
+                {
+                    var emailDto = new EmailDto()
+                    {
+                        ID = vendorEMail.ID,
+                        Address = vendorEMail.Address,
+                    };
+
+                    vendorDto.EMails.Add(emailDto);
+                }
+            }
+
+            vendorDto.Phones = new List<PhoneDto>();
+            if (vendor.Phones.Any())
+            {
+                foreach (var vendorPhone in vendor.Phones)
+                {
+                    var phoneDto = new PhoneDto()
+                    {
+                        ID = vendorPhone.ID,
+                        CountryCode = vendorPhone.CountryCode,
+                        Number = vendorPhone.Number,
+                        Extension = vendorPhone.Extension,
+                        PhoneType = vendorPhone.PhoneType.Type
+                    };
+
+                    vendorDto.Phones.Add(phoneDto);
+                }
+            }
+
+            return vendorDto;
+        }
+
+        internal VendorDto GetVendors(long id)
+        {
+            var vendor = _vendorComponent.GetVendor(id);
+
+            var vendorDto = mapToDto(vendor);
+
+            return vendorDto;
         }
 
         internal void CreateVendor(VendorDto vendorDto)
