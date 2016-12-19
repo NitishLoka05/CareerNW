@@ -1,14 +1,79 @@
 ﻿
-<h4 class="col-sm-offset-1">{{vm.title}}</h4>
-<br />
-<form novalidate class="css-form form-horizontal">
-
-    <vendor-form></vendor-form>
-
-    <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-            <input type="button" class="btn btn-danger" ng-click="vm.reset()" value="Reset" />
-            <input type="submit" class="btn btn-default" ng-click="vm.create()" value="Create" />
-        </div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="col-sm-offset-1">{{vm.title}}</h4>
     </div>
-</form>
+    <div class="panel-body">
+        <form novalidate class="css-form form-horizontal">
+
+            <vendor-form></vendor-form>
+
+            <div class="panel-group">
+
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Address</div>
+                        <div class="panel-body">
+                            <!--<div ng-repeat="address in vm.vendor.Addresses"></div>-->
+                            <div class="form-group">
+                                <label for="StreetAddress" class="col-sm-offset-1 col-sm-2 control-label">Street Address</label>
+                                <div class="col-sm-9">
+                                    <input id="StreetAddress" name="StreetAddress" class="form-control" placeholder="Street Address" type="text" ng-model="address.StreetAddress" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="StreetAddress2" class="col-sm-offset-1 col-sm-2 control-label">Street Address 2</label>
+                                <div class="col-sm-9">
+                                    <input id="StreetAddress2" name="StreetAddress2" class="form-control" placeholder="Street Address 2" type="text" ng-model="address.StreetAddress2" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="City" class="col-sm-offset-1 col-sm-2 control-label">City</label>
+                                <div class="col-sm-9">
+                                    <input id="City" name="City" class="form-control" placeholder="City" type="text" ng-model="address.City" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="State" class="col-sm-offset-1 col-sm-2 control-label">State</label>
+                                <div class="col-sm-9">
+                                    <input id="State" name="State" class="form-control" placeholder="State" type="text" ng-model="address.State" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Zipcode" class="col-sm-offset-1 col-sm-2 control-label">Zip Code</label>
+                                <div class="col-sm-9">
+                                    <input id="Zipcode" name="Zipcode" class="form-control" placeholder="Zip Code" type="text" ng-model="address.Zipcode" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Country" class="col-sm-offset-1 col-sm-2 control-label">Country</label>
+                                <div class="col-sm-9">
+                                    <input id="Country" name="Country" class="form-control" placeholder="Country" type="text" ng-model="address.Country" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">E-mail</div>
+                        <div class="panel-body">Panel Content</div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Phone</div>
+                        <div class="panel-body">Panel Content</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <input type="button" class="btn btn-danger" ng-click="vm.reset()" value="Reset" />
+                    <input type="submit" class="btn btn-default" ng-click="vm.create()" value="Create" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
