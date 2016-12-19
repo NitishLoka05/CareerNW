@@ -1,0 +1,77 @@
+12/19/2016 4:59:43 PM	This log contains information about the import schema operation into project 'CareerNWDatabase' on computer 'ERSYS786' by user 'nloka'.
+12/19/2016 4:59:43 PM	Import of database schema has started.
+12/19/2016 4:59:47 PM	Gathering database options
+12/19/2016 4:59:47 PM	Gathering users
+12/19/2016 4:59:47 PM	Gathering roles
+12/19/2016 4:59:47 PM	Gathering application roles
+12/19/2016 4:59:47 PM	Gathering role memberships
+12/19/2016 4:59:47 PM	Gathering filegroups
+12/19/2016 4:59:47 PM	Gathering full-text catalogs
+12/19/2016 4:59:47 PM	Gathering assemblies
+12/19/2016 4:59:47 PM	Gathering certificates
+12/19/2016 4:59:47 PM	Gathering asymmetric keys
+12/19/2016 4:59:47 PM	Gathering symmetric keys
+12/19/2016 4:59:47 PM	Gathering encrypted symmetric keys
+12/19/2016 4:59:47 PM	Gathering schemas
+12/19/2016 4:59:47 PM	Gathering XML schema collections
+12/19/2016 4:59:47 PM	Gathering user-defined data types
+12/19/2016 4:59:47 PM	Gathering user-defined types
+12/19/2016 4:59:47 PM	Gathering table types
+12/19/2016 4:59:47 PM	Gathering unique keys for table types
+12/19/2016 4:59:47 PM	Gathering primary keys for table types
+12/19/2016 4:59:47 PM	Gathering check constraints for table types
+12/19/2016 4:59:47 PM	Gathering default constraints for table types
+12/19/2016 4:59:47 PM	Gathering partition functions
+12/19/2016 4:59:47 PM	Gathering partition schemes
+12/19/2016 4:59:47 PM	Gathering functions
+12/19/2016 4:59:47 PM	Gathering encrypted functions
+12/19/2016 4:59:47 PM	Gathering aggregates
+12/19/2016 4:59:47 PM	Gathering procedures
+12/19/2016 4:59:47 PM	Gathering encrypted procedures
+12/19/2016 4:59:47 PM	Gathering tables
+12/19/2016 4:59:47 PM	Gathering primary keys
+12/19/2016 4:59:48 PM	Gathering unique constraints
+12/19/2016 4:59:48 PM	Gathering foreign keys
+12/19/2016 4:59:48 PM	Gathering default constraints
+12/19/2016 4:59:48 PM	Gathering check constraints
+12/19/2016 4:59:48 PM	Gathering views
+12/19/2016 4:59:48 PM	Gathering encrypted views
+12/19/2016 4:59:48 PM	Gathering indexes
+12/19/2016 4:59:48 PM	Gathering statistics
+12/19/2016 4:59:48 PM	Gathering full-text index stoplists
+12/19/2016 4:59:48 PM	Gathering search property lists
+12/19/2016 4:59:48 PM	Gathering search properties
+12/19/2016 4:59:48 PM	Gathering full-text indexes
+12/19/2016 4:59:48 PM	Gathering column store indexes
+12/19/2016 4:59:48 PM	Gathering spatial indexes
+12/19/2016 4:59:48 PM	Gathering XML indexes
+12/19/2016 4:59:48 PM	Gathering Selective XML indexes
+12/19/2016 4:59:48 PM	Gathering encrypted triggers
+12/19/2016 4:59:48 PM	Gathering triggers
+12/19/2016 4:59:48 PM	Gathering encrypted and clr ddl triggers
+12/19/2016 4:59:48 PM	Gathering ddl triggers
+12/19/2016 4:59:48 PM	Gathering synonyms
+12/19/2016 4:59:48 PM	Gathering defaults
+12/19/2016 4:59:48 PM	Gathering data constraint uddt bindings
+12/19/2016 4:59:48 PM	Gathering rules
+12/19/2016 4:59:48 PM	Gathering data constraint uddt bindings
+12/19/2016 4:59:48 PM	Gathering message types
+12/19/2016 4:59:48 PM	Gathering queues
+12/19/2016 4:59:48 PM	Gathering contracts
+12/19/2016 4:59:48 PM	Gathering services
+12/19/2016 4:59:48 PM	Gathering event notifications
+12/19/2016 4:59:48 PM	Gathering remote service bindings
+12/19/2016 4:59:48 PM	Gathering broker priorities
+12/19/2016 4:59:48 PM	Gathering signatures
+12/19/2016 4:59:48 PM	Gathering data compression options
+12/19/2016 4:59:48 PM	Gathering sequence types
+12/19/2016 4:59:48 PM	Gathering database permissions
+12/19/2016 4:59:48 PM	Gathering extended properties
+12/19/2016 4:59:48 PM	Gathering credentials
+12/19/2016 4:59:48 PM	Gathering logins
+12/19/2016 4:59:48 PM	Gathering server audits
+12/19/2016 4:59:48 PM	Scanning project for duplicate elements
+12/19/2016 4:59:48 PM	Finished duplicate element processing
+12/19/2016 4:59:48 PM	Finished importing database.
+12/19/2016 4:59:48 PM	A summary of the import was saved to the following location: C:\Users\nloka\Documents\_personal\GitRepoSource\CareerNW\CareerNW\CareerNWDatabase\Import Schema Logs\CareerNWDatabase_20161219095943.log
+12/19/2016 4:59:48 PM	Click Finish to continue...
